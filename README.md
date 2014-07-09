@@ -27,20 +27,20 @@ Attributes
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['memcached']['config_available']</tt></td>
+    <td><tt>'config_available'</tt></td>
     <td>Hash</td>
     <td>Defines all available memcached instance configurations</td>
     <td><tt>default</tt></td>
   </tr>
   <tr>
-    <td><tt>['memcached']['config_enabled']</tt></td>
+    <td><tt>'config_enabled'</tt></td>
     <td>Array</td>
     <td>Defines memcached instances to configure on the node using parameters defined in config_available</td>
     <td><tt>nil</tt></td>
   </tr>
 </table>
 
-#### \['memcached'\]\['config\_available'\]
+#### attribute 'config\_available'
 ```json
 {
   "memcached": {
@@ -63,6 +63,8 @@ Attributes
 
 Usage
 -----
+`config_available` and `config_enabled` can be defined in a role and can be overrided at the environment level.
+
 #### memcached::default
 Installs 2 memcached instances:
  * 'default' using memcached factory configuration.
@@ -85,8 +87,6 @@ Installs 2 memcached instances:
   }
 }
 ```
-
-`config\_available` and `config\_enabled` can be defined in a role and can be overrided at the environment level.
 
 License and Authors
 -------------------
