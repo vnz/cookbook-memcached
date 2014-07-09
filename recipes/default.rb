@@ -2,7 +2,7 @@
 # Cookbook Name:: memcached
 # Recipe:: default
 #
-# Copyright 2014, Ebuzzing
+# Copyright 2014, vnz
 #
 
 package 'memcached'
